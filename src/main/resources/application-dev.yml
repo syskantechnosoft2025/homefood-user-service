@@ -1,0 +1,11 @@
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+logging:
+  level:
+    com.homefood: DEBUG
+    org.springframework.security: DEBUG
+    org.hibernate.SQL: DEBUG
