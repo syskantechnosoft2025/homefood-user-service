@@ -27,7 +27,7 @@ jobs:
         id: start
         run: echo "start=$(date +%s)" >> $GITHUB_OUTPUT
       - name: Build and test
-        run: mvn verify --no-transfer-progress -DskipTests
+        run: mvn verify --no-transfer-progress -Dmaven.test.skip=true
       - name: Record build time
         id: timer
         run: |
